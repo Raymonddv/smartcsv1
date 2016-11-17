@@ -17,3 +17,21 @@ Route::get('/', function () {
 
 Route::get('about', 'PagesController@about');
 Route::get('vragen', 'PagesController@vragen');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+Route::get('auth/facebook', 'Auth\LoginController@redirectToProvider');
+Route::get('auth/facebook/callback', 'Auth\LoginController@handleProviderCallback');
+
+Route::patch('home', array('as' => 'home', 'uses' => function(){
+  return view('home');
+}));
+
+Route::get('/home', function () {
+    return view('home');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

@@ -4,9 +4,11 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Auth;
+use Socialite;
+use App\User;
 
 class LoginController extends Controller
-{
     /*
     |--------------------------------------------------------------------------
     | Login Controller
@@ -17,7 +19,7 @@ class LoginController extends Controller
     | to conveniently provide its functionality to your applications.
     |
     */
-
+{
     use AuthenticatesUsers;
 
     /**
@@ -25,15 +27,50 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    public function redirectToProvider()
+    {
+        return Socialite::driver('facebook')->redirect();
+    }
 
     /**
-     * Create a new controller instance.
+     * Obtain the user information from Facebook.
      *
-     * @return void
+     * @return Response
      */
-    public function __construct()
+    public function handleProviderCallback()
     {
-        $this->middleware('guest', ['except' => 'logout']);
+        try {
+            $user = Socialite::driver('facebook')->user();
+        } catch (Exception $e) {
+            return redirect('auth/facebook');
+        }
+
+        $authUser = $this->findOrCreateUser($user);
+
+        Auth::login($authUser, true);
+
+        return redirect()->route('home');
+    }
+
+    /**
+     * Return user if exists; create and return if doesn't
+     *
+     * @param $facebookUser
+     * @return User
+     */
+    private function findOrCreateUser($facebookUser)
+    {
+        $authUser = User::where('facebook_id', $facebookUser->id)->first();
+
+        if ($authUser){
+            return $authUser;
+        }
+
+        return User::create([
+            'name' => $facebookUser->name,
+            'email' => $facebookUser->email,
+            'facebook_id' => $facebookUser->id,
+            'avatar' => $facebookUser->avatar
+        ]);
     }
 }
