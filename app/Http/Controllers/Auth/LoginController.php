@@ -27,23 +27,19 @@ class LoginController extends Controller
      *
      * @var string
      */
-    public function redirectToProvider()
-    {
-        return Socialite::driver('facebook')->redirect();
-    }
+public function redirectToProvider()
+{
+    return Socialite::with('facebook')->fields([
+        'first_name', 'last_name', 'email', 'gender', 'birthday', 'locale'
+    ])->scopes([
+        'email', 'user_birthday'
+    ])->redirect();
+}
 
-    /**
-     * Obtain the user information from Facebook.
-     *
-     * @return Response
-     */
-    public function handleProviderCallback()
-    {
-        try {
-            $user = Socialite::driver('facebook')->user();
-        } catch (Exception $e) {
-            return redirect('auth/facebook');
-        }
+ public function handleProviderCallback(){
+    $user = Socialite::with('facebook')->fields([
+        'name', 'email', 'gender', 'verified', 'first_name', 'last_name', 'birthday', 'locale'
+    ])->user();
 
         $authUser = $this->findOrCreateUser($user);
 
@@ -70,7 +66,10 @@ class LoginController extends Controller
             'name' => $facebookUser->name,
             'email' => $facebookUser->email,
             'facebook_id' => $facebookUser->id,
-            'avatar' => $facebookUser->avatar
+            'avatar' => $facebookUser->avatar,
+            'gender' => $facebookUser->gender,
+            'birthday' => $facebookUser->birthday,
+            'locale' => $facebookUser->locale,
         ]);
     }
 }
