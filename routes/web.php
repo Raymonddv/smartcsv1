@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('about', 'PagesController@about');
-Route::get('vragen', 'PagesController@vragen');
+Route::get('vragen', 'VragenController@index');
 Route::get('inleiding', 'PagesController@inleiding');
 Route::get('disclaimer', 'PagesController@disclaimer');
 
