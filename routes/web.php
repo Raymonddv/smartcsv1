@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::get('about', 'PagesController@about');
 Route::get('vragen', 'PagesController@vragen');
 Route::get('inleiding', 'PagesController@inleiding');
+Route::get('disclaimer', 'PagesController@disclaimer');
 
 Auth::routes();
 
@@ -33,6 +34,4 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index');
