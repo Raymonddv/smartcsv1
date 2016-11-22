@@ -9,7 +9,7 @@
   <div class="col-lg-6">
   <br>
         <input type="checkbox" aria-label="...">
-        <a href="localhost:8000/disclaimer">klik hier voor de algemene voorwaarden</a>
+        <a onclick="localhost:8000/disclaimer">klik hier voor de algemene voorwaarden</a>
       </span>
 
 
