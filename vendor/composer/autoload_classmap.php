@@ -6,15 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'CreateFacebookLikesMatchTable' => $baseDir . '/database/migrations/2016_11_22_091629_create_facebook_likes_match_table.php',
-    'CreateFacebookLikesTable' => $baseDir . '/database/migrations/2016_11_22_091629_create_facebook_likes_table.php',
-    'CreateMatchesTable' => $baseDir . '/database/migrations/2016_11_22_092134_create_matches_table.php',
-    'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
-    'CreateProfilePreferencesTable' => $baseDir . '/database/migrations/2016_11_22_093136_create_profile_preferences_table.php',
-    'CreateReviewsTable' => $baseDir . '/database/migrations/2016_11_21_143707_create_reviews_table.php',
-    'CreateTypeMatchesTable' => $baseDir . '/database/migrations/2016_11_22_091201_create_type_matches_table.php',
-    'CreateTypePlacesTable' => $baseDir . '/database/migrations/2016_11_22_081630_create_type_places_table.php',
-    'CreateUserEnquetesTable' => $baseDir . '/database/migrations/2016_11_21_143618_create_user_enquetes_table.php',
+    'CreatePlacesTable' => $baseDir . '/database/migrations/2016_11_21_141552_create_places_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
