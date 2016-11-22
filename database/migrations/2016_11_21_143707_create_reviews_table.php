@@ -16,7 +16,7 @@ class CreateReviewsTable extends Migration
         Schema::create('reviews', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('placeid');
-            $table->float('stars' 8, 2);
+            $table->float('stars');
             $table->timestamps();
         });
     }

@@ -15,7 +15,7 @@ class CreateTypePlacesTable extends Migration
     {
         Schema::create('type_places', function (Blueprint $table) {
           $table->integer('typeid');
-          $table->varchar('name');
+          $table->string('name');
         });
     }
 

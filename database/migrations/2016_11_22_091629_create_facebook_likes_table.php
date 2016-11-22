@@ -15,7 +15,7 @@ class CreateFacebookLikesTable extends Migration
     {
         Schema::create('facebook_likes', function (Blueprint $table) {
             $table->integer('fblikeid');
-            $table->varchar('titel');
+            $table->string('titel');
         });
     }
 
