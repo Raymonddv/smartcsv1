@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Route::get('about', 'PagesController@about');
 Route::get('vragen', 'PagesController@vragen');
+Route::get('inleiding', 'PagesController@inleiding');
 
 Auth::routes();
 
