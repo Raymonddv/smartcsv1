@@ -314,8 +314,15 @@ class ComposerStaticInitcaa14b3d5d69412a4a4b775e53c652c7
     );
 
     public static $classMap = array (
+        'CreateFacebookLikesMatchTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_22_091629_create_facebook_likes_match_table.php',
+        'CreateFacebookLikesTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_22_091629_create_facebook_likes_table.php',
+        'CreateMatchesTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_22_092134_create_matches_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
-        'CreatePrductTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_18_170916_Create_prduct_table.php',
+        'CreateProfilePreferencesTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_22_093136_create_profile_preferences_table.php',
+        'CreateReviewsTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_21_143707_create_reviews_table.php',
+        'CreateTypeMatchesTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_22_091201_create_type_matches_table.php',
+        'CreateTypePlacesTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_22_081630_create_type_places_table.php',
+        'CreateUserEnquetesTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_21_143618_create_user_enquetes_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
