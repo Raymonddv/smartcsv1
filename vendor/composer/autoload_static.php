@@ -314,6 +314,7 @@ class ComposerStaticInitcaa14b3d5d69412a4a4b775e53c652c7
     );
 
     public static $classMap = array (
+        'CreateEnquetesTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_22_113242_create_enquetes_table.php',
         'CreateFacebookLikesMatchTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_22_091629_create_facebook_likes_match_table.php',
         'CreateFacebookLikesTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_22_091629_create_facebook_likes_table.php',
         'CreateMatchesTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_22_092134_create_matches_table.php',

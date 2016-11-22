@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'CreateEnquetesTable' => $baseDir . '/database/migrations/2016_11_22_113242_create_enquetes_table.php',
     'CreateFacebookLikesMatchTable' => $baseDir . '/database/migrations/2016_11_22_091629_create_facebook_likes_match_table.php',
     'CreateFacebookLikesTable' => $baseDir . '/database/migrations/2016_11_22_091629_create_facebook_likes_table.php',
     'CreateMatchesTable' => $baseDir . '/database/migrations/2016_11_22_092134_create_matches_table.php',

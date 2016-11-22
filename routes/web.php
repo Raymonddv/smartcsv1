@@ -19,6 +19,8 @@ Route::get('about', 'PagesController@about');
 Route::get('vragen', 'PagesController@vragen');
 Route::get('inleiding', 'PagesController@inleiding');
 Route::get('disclaimer', 'PagesController@disclaimer');
+Route::get('userenquete', 'UserEnquetesController@index');
+Route::post('userenquete', 'UserEnquetesController@store');
 
 Auth::routes();
 
