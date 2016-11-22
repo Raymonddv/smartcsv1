@@ -15,19 +15,19 @@ class CreateUserEnquetesTable extends Migration
     {
         Schema::create('user_enquetes', function (Blueprint $table) {
           $table->increments('id');
-          $table->varchar('place_1');
+          $table->string('place_1');
           $table->integer('place_1_kwaliteit_eten')->nullable();
           $table->integer('place_1_prijs_kwaliteit')->nullable();
           $table->integer('place_1_variatie')->nullable();
           $table->integer('place_1_sfeer')->nullable();
           $table->integer('place_1_service')->nullable();
-          $table->varchar('place_2');
+          $table->string('place_2');
           $table->integer('place_2_kwaliteit_eten')->nullable();
           $table->integer('place_2_prijs_kwaliteit')->nullable();
           $table->integer('place_2_variatie')->nullable();
           $table->integer('place_2_sfeer')->nullable();
           $table->integer('place_2_service')->nullable();
-          $table->varchar('place_3');
+          $table->string('place_3');
           $table->integer('place_3_kwaliteit_eten')->nullable();
           $table->integer('place_3_prijs_kwaliteit')->nullable();
           $table->integer('place_3_variatie')->nullable();
