@@ -34,7 +34,7 @@ class UserEnquetesController extends Controller
            ->where('id', 1)
            ->update(['place_1_service' => $request->input('place_1_service')]);
 
-           return redirect('home');
+           return redirect('userenquete2');
    }
 }
 
