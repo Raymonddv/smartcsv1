@@ -5,17 +5,35 @@
 
 @section('content')
 <div class="container">
-    <h1>Vragen</h1>
-    <h3>test vraag 1?</h3>
-    <form>
-    <div class="btn-group" role="group" aria-label="...">
-      <button type="button" class="btn btn-default">1</button>
-      <button type="button" class="btn btn-default">2</button>
-      <button type="button" class="btn btn-default">3</button>
-      <button type="button" class="btn btn-default">4</button>
-      <button type="button" class="btn btn-default">5</button>
-    </div>
-     <button type="submit" class="btn btn-primary">Antwoord</button>
-     </form>
+    <h1>Vragen Restaurant</h1>
+<form action="">
+<select name="restaurant1">
+  @foreach ($places as $place)
+  <option value="{{$place->name}}">{{$place->name}}</option>
+  @endforeach
+</select>
+
+<select name="restaurant2">
+  @foreach ($places as $place)
+  <option value="{{$place->name}}">{{$place->name}}</option>
+  @endforeach
+</select>
+
+<select name="restaurant3">
+  @foreach ($places as $place)
+  <option value="{{$place->name}}">{{$place->name}}</option>
+  @endforeach
+</select>
+
+<button type="submit">Verzend</button>
+
+</form>
+
 </div>
+
+
+
+
+
+
 @stop
