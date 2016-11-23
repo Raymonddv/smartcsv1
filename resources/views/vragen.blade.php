@@ -1,14 +1,5 @@
 @extends('layouts.app')
 
-@section('header')
-@stop
-
-@section('content')
-@extends('layouts.app')
-
-@section('header')
-@stop
-
 @section('content')
 <div class="container">
     <h1>Vragen Restaurant</h1>
@@ -40,18 +31,6 @@
     </div>
   </form>
 </div>
-
-
-
-
-
-
-@stop
-
-
-
-
-
 
 
 @stop
