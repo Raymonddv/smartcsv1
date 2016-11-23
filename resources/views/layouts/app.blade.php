@@ -16,7 +16,6 @@
     <link href="/css/reset.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
 
-
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
