@@ -22,8 +22,10 @@ Route::get('disclaimer', 'PagesController@disclaimer');
 
 Route::get('userenquete', 'UserEnquetesController@index');
 Route::get('userenquete2', 'UserEnquetes2Controller@index');
+Route::get('userenquete3', 'UserEnquete3Controller@index');
 Route::post('userenquete', 'UserEnquetesController@store');
 Route::post('userenquete2', 'UserEnquetes2Controller@store');
+Route::post('userenquete3', 'UserEnquete3Controller@store');
 
 Auth::routes();
 
