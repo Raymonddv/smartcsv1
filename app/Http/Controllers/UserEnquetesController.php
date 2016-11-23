@@ -18,23 +18,23 @@ class UserEnquetesController extends Controller
       $id=Auth::id();
 
        DB::table('user_enquetes')
-           ->where('id', $id)
+           ->where('enquete_id', $id)
            ->update(['place_1_kwaliteit_eten' => $request->input('place_1_kwaliteit_eten')]);
 
            DB::table('user_enquetes')
-           ->where('id', $id)
+           ->where('enquete_id', $id)
            ->update(['place_1_prijs_kwaliteit' => $request->input('place_1_prijs_kwaliteit')]);
 
            DB::table('user_enquetes')
-           ->where('id', $id)
+           ->where('enquete_id', $id)
            ->update(['place_1_variatie' => $request->input('place_1_variatie')]);
 
            DB::table('user_enquetes')
-           ->where('id', $id)
+           ->where('enquete_id', $id)
            ->update(['place_1_sfeer' => $request->input('place_1_sfeer')]);
 
            DB::table('user_enquetes')
-           ->where('id', $id)
+           ->where('enquete_id', $id)
            ->update(['place_1_service' => $request->input('place_1_service')]);
 
            return redirect('userenquete2');
