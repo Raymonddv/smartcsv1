@@ -14,6 +14,8 @@
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/reset.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+
 
     <!-- Scripts -->
     <script>
