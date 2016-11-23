@@ -19,6 +19,7 @@ Route::get('about', 'PagesController@about');
 Route::get('vragen', 'VragenController@index');
 Route::get('inleiding', 'PagesController@inleiding');
 Route::get('disclaimer', 'PagesController@disclaimer');
+Route::post('vragen', 'VragenController@store');
 
 Auth::routes();
 
