@@ -34,7 +34,10 @@
       @endforeach
     </select>
     <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
-    <button type="submit">Verzend</button>
+    <div class="buttonCenter">
+      <input type="submit" class="button gradientcolor" title="button"
+      value="Volgende vraag">
+    </div>
   </form>
 </div>
 
