@@ -53,7 +53,7 @@
         <label class="question" for="checkbox-4">Goede prijs-kwaliteitverhouding
         </label>
 
-    <input type="range" name="place_1_sfeer" max="11" min="0" step="1" value="" disabled="disabled">
+    <input type="range" name="place_1_sfeer" max="10" min="0" step="1" value="" disabled="disabled">
 
         <p class="sliderText neutraalT">Neutraal</p>
         <p class="sliderText goedT">Goed</p>
@@ -66,7 +66,7 @@
         <label class="question" for="checkbox-5">Goede prijs-kwaliteitverhouding
         </label>
 
-    <input type="range" name="place_1_service" max="11" min="0" step="1" value="" disabled="disabled">
+    <input type="range" name="place_1_service" max="10" min="0" step="1" value="" disabled="disabled">
 
         <p class="sliderText neutraalT">Neutraal</p>
         <p class="sliderText goedT">Goed</p>
