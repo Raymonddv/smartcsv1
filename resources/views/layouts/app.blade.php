@@ -11,7 +11,9 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
+    <link href="/css/style.css" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/reset.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script>

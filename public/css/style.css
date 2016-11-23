@@ -1,0 +1,1030 @@
+@charset "utf-8";
+
+/*************************Overall CSS************************/
+html{
+  font-family: 'Hind', sans-serif;
+  color: #EEEEEE;
+}
+
+body{
+  background-image: url(../img/background.jpg);
+}
+
+
+h1{
+  font-size: 70px;
+}
+
+h3{
+  font-size: 18px;
+}
+
+h5{
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+  font-size: 30px;
+}
+
+h6{
+  font-size: 18px;
+}
+
+/******************CSS for Index.php**************************/
+.indexTitle{
+  text-align: center;
+  margin:15% auto 0 auto;
+  max-width: 700px;
+}
+
+.fb-login-wrapper{
+  width: 100%;
+  height: 40px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+input.fb-login-button{
+  width: 299px;
+  height: 60px;
+  padding: 6px 20px 0 0 ;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: #EDEDED;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: 'Hind', sans-serif;
+  text-align: right;
+  background-color: #3b5998;
+  background-image: url(../img/facebook_icon.svg);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+}
+
+input.fb-login-button:disabled{
+  background-color: #707070;
+  cursor: not-allowed;
+  background-image: url(../img/facebook_icon_dis.svg);
+  background-size: 60px;
+  background-repeat: no-repeat;
+}
+
+.termsAndConditionsWrapper{
+  max-width: 345px;
+  margin: 40px auto;
+}
+
+.termsAndConditionsWrapper input{
+  float: left;
+  margin-right: 10px
+}
+
+.termsAndConditionsWrapper p{
+  max-width: 780px;
+  float: left;
+  margin-top: 2px;
+}
+
+.termsAndConditionsWrapper #termsAndConditions{
+text-decoration: underline;
+}
+
+/********************CSS for all subpages***********************/
+h1.subPageTitle{
+  font-size: 55px;
+  text-align: center;
+  margin:5% auto 0 auto;
+  max-width: 700px;
+}
+
+.mainWrapper{
+  max-width: 45%;
+  width: 100%;
+  height: 500px;
+  margin: 50px auto 0 auto;
+}
+
+li{
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/*****************CSS for Button******************************/
+.button{
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0 20px 0 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: #EDEDED;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Hind', sans-serif;
+  text-align: center;
+  font-weight: 500;
+}
+
+.gradientcolor{
+  background: -webkit-linear-gradient(#D32353, #99163A);
+  background: -o-linear-gradient(#D32353, #99163A);
+  background: -moz-linear-gradient(#D32353, #99163A);
+  background: linear-gradient(#D32353, #99163A);
+}
+
+.gradientcolor:hover{
+  background: -webkit-linear-gradient(#D03761, #AF153F);
+  background: -o-linear-gradient(#D03761, #AF153F);
+  background: -moz-linear-gradient(#D03761, #AF153F);
+  background: linear-gradient(#D03761, #AF153F);
+}
+
+.gradientcolor:active{
+  background: -webkit-linear-gradient(#CC2251, #99163A );
+  background: -o-linear-gradient(#CC2251, #99163A );
+  background: -moz-linear-gradient(#CC2251, #99163A );
+  background: linear-gradient(#CC2251, #99163A );
+}
+/*****************CSS for termsAndConditions.php***************/
+article.articleTAC{
+  font-size: 18px;
+  line-height: 1.4em;
+  max-width: 920px;
+  width: 100%;
+  max-height: 500px;
+  overflow-y:scroll;
+  margin-top: 20%;
+  padding: 20px;
+  border: solid 1px #D32353;
+  box-shadow: -5px 0 #d32353;
+  border-radius: 10px;
+  background-color: #EEEEEE;
+  color: #222222;
+}
+
+span.boldText{
+  font-weight: bold;
+}
+
+/******************CSS for custom Scrollbar***********************/
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d32353;
+  border: 0px none #ffffff;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d03761;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #cc2251;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/********************CSS for preface.php**********************/
+article#prefaceP{
+  font-size: 18px;
+  line-height: 1.4em;
+  margin-top: 20%;
+  padding: 20px;
+  border: solid 1px #D32353;
+  box-shadow: -5px 0 #d32353;
+  border-radius: 10px;
+  background-color: #EEEEEE;
+  color: #222;
+}
+
+.buttonCenter{
+  text-align: center;
+}
+
+/**************CSS for Best Restaurants.php******************/
+section#bestRestaurantsSection{
+  margin-top: 10%;
+  padding: 20px;
+  border: solid 1px #D32353;
+  box-shadow: -5px 0 #d32353;
+  border-radius: 10px;
+  background-color: #EEEEEE;
+  color: #111;
+}
+
+#choiceTitle{
+  text-align: center;
+
+}
+
+select{
+  width: 100%;
+  height: 40px;
+  margin: 5px 0 20px 0;
+  padding: 0 8px;
+  border: solid 3px #D32353;
+  border-radius: 7px;
+  box-shadow: 0 2.5px 2.5px 0 #CCC;
+  color: #666;
+  font-size: 18px;
+  background-image: url(../img/dropdwn_chevron.svg);
+  background-origin: content-box;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: right;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#choice3{
+  margin-bottom: 0px;
+}
+
+/******************CSS for restaurant score*******************/
+section#RestaurantScoreSection{
+  margin-top: 10%;
+  padding: 20px;
+  border: solid 1px #D32353;
+  box-shadow: -5px 0 #d32353;
+  border-radius: 10px;
+  background-color: #EEEEEE;
+  color: #111;
+  box-sizing: border-box;
+}
+
+#scoreTitle{
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*checkbox css*/
+label {
+  display: inline;
+  cursor: pointer;
+  color: #666;
+  font-size: 18px;
+}
+
+.regular-checkbox {
+  display: none;
+}
+
+
+.regular-checkbox + label {
+  background-color: #fafafa;
+  border: 1px solid #cacece;
+  padding: 10px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+}
+
+.regular-checkbox:checked + label:after {
+  content: '\2714';
+  font-size: 30px;
+  position: absolute;
+  top: -7px;
+  left: 2px;
+  color: #D32353;
+}
+
+.question{
+  display: inline;
+  margin-left: 2%;
+  color: #222;
+}
+
+/*slider css*/
+.sliderContainer:not(:first-child){
+  padding-top: 10px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.sliderText{
+  width: 32.5%;
+  display: inline-block;
+  margin: 0 0 15px 0;
+  color: #666;
+}
+.neutraalT{
+  text-align: left;
+}
+
+.goedT{
+  text-align: center;
+}
+
+.uitstekendT{
+  text-align: right;
+}
+
+#lastslidercontainer p{
+  margin-bottom: 0px;
+}
+
+/*Chrome etc*/
+input[type=range]{
+  display: flex;
+  width: 90%;
+  margin: 18px 5%;
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track{
+  height: 7px;
+  background: #D32353;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]:disabled::-webkit-slider-runnable-track{
+  background-color: grey;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 25px;
+  width: 15px;
+  border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+  margin-top: -8px;
+  background: -webkit-linear-gradient(#fbfbfb, #e5e5e5);
+  background: -o-linear-gradient(#fbfbfb, #e5e5e5);
+  background: -moz-linear-gradient(#fbfbfb, #e5e5e5);
+  background: linear-gradient(#fbfbfb, #e5e5e5);
+  box-shadow: 0px 2px 4px #777;
+  cursor: pointer;
+}
+
+input[type=range]:disabled::-webkit-slider-thumb{
+  cursor: auto;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+/*firefox*/
+input[type=range]::-moz-range-track {
+  height: 7px;
+  background: #D32353;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]:disabled::-moz-range-track {
+  background: grey;
+}
+
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 25px;
+  width: 15px;
+  border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+  margin-top: -8px;
+  background: -webkit-linear-gradient(#fbfbfb, #e5e5e5);
+  background: -o-linear-gradient(#fbfbfb, #e5e5e5);
+  background: -moz-linear-gradient(#fbfbfb, #e5e5e5);
+  background: linear-gradient(#fbfbfb, #e5e5e5);
+  box-shadow: 0px 2px 4px #777;
+  cursor: pointer;
+}
+
+input[type=range]:disabled::-moz-range-thumb {
+  cursor: auto;
+}
+
+input[type=range]:-moz-focusring{
+  outline: none;
+}
+
+/*internet explorer*/
+input[type=range]::-ms-track {
+  height: 5px;
+  background: transparent;
+  border-color: transparent;
+  border-width: 15px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #d32353;
+  border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+  background: #d32353;
+  border-radius: 10px;
+}
+
+input[type=range]:disabled::-ms-fill-lower{
+  background: grey;
+}
+
+input[type=range]:disabled::-ms-fill-upper{
+  background: grey;
+}
+
+input[type=range]::-ms-thumb {
+  border: none;
+  height: 25px;
+  width: 15px;
+  border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+  margin-top: -2px;
+  background: -webkit-linear-gradient(#fbfbfb, #e5e5e5);
+  background: -o-linear-gradient(#fbfbfb, #e5e5e5);
+  background: -moz-linear-gradient(#fbfbfb, #e5e5e5);
+  background: linear-gradient(#fbfbfb, #e5e5e5);
+  box-shadow: 0px 2px 4px #777;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 25px;
+  width: 15px;
+  border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+  margin-top: -8px;
+  background: -webkit-linear-gradient(#fbfbfb, #e5e5e5);
+  background: -o-linear-gradient(#fbfbfb, #e5e5e5);
+  background: -moz-linear-gradient(#fbfbfb, #e5e5e5);
+  background: linear-gradient(#fbfbfb, #e5e5e5);
+  box-shadow: 0px 2px 4px #777;
+  cursor: pointer;
+}
+
+input[type=range]:disabled::-webkit-slider-thumb{
+  cursor: auto;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+/*******************Css for Endpage*****************************/
+#endTitle{
+  text-align: center;
+}
+
+article.articleEP{
+  font-size: 18px;
+  line-height: 1.4em;
+  margin-top: 20%;
+  padding: 0 20px;
+  border: solid 1px #D32353;
+  box-shadow: -5px 0 #d32353;
+  border-radius: 10px;
+  background-color: #EEEEEE;
+  color: #222222;
+}
+
+/****************** Mobile Media Query ***************************/
+@media only screen and (max-device-width: 640px) {
+#Header {
+  width: 100%;
+  background-color: #6c1779;
+  height: 50px;
+  color: #eeeeee;
+  overflow: hidden;
+  position: relative;
+}
+
+#Header #icon_disclaimer {
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+#Header #icon_info {
+  margin-left: 15px;
+}
+
+#Header #icon_logout {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+/*************************Overall CSS for Mobile************************/
+html{
+  font-family: 'Hind', sans-serif;
+  color: #EEEEEE;
+}
+
+p{
+  margin: 16px 0
+}
+
+h1{
+  font-size: 70px;
+}
+
+h3 {
+  font-size: 2em;
+  padding-top: .5em;
+}
+
+h5{
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+  font-size: 30px;
+}
+
+h6{
+  font-size: 2em;
+}
+
+/******************CSS Mobile for Index**************************/
+
+.indexTitle{
+  font-size: 4em;
+  text-align: center;
+  margin: 3em auto 5.5em auto;
+  max-width: 12em;
+}
+
+.fb-login-wrapper{
+  width: 100%;
+  height: 4em;
+  padding-top: 40px;
+  text-align: center;
+}
+
+input.fb-login-button{
+  width: 16em;
+  height: 3.5em;
+  padding: .5em .6em .3em .5em;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: #EDEDED;
+  cursor: pointer;
+  font-size: 2em;
+  font-family: 'Hind', sans-serif;
+  text-align: right;
+  background-color: #3b5998;
+  background-image: url(../img/facebook_icon.svg);
+  background-size: 3.5em;
+  background-repeat: no-repeat;
+  border-radius: .35em;
+}
+
+input.fb-login-button:disabled{
+  background-color: #707070;
+  cursor: not-allowed;
+  background-image: url(../img/facebook_icon_dis.svg);
+  background-size: 3.5em;
+  background-repeat: no-repeat;
+}
+
+.termsAndConditionsWrapper{
+  max-width: 100%;
+  margin: 5.5em 11em;
+}
+
+.termsAndConditionsWrapper input{
+  float: left;
+  margin-right: 10px
+}
+
+.termsAndConditionsWrapper p{
+  font-size: 1.8em;
+  max-width: 780px;
+  float: left;
+  margin-top: .3em;
+}
+
+.termsAndConditionsWrapper #termsAndConditions{
+  text-decoration: underline;
+}
+
+input[type=checkbox] {
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+  margin-top: 1.3em;
+  margin-right: 2.5em;
+}
+
+
+/********************CSS Mobile for all subpages***********************/
+h1.subPageTitle{
+  font-size: 4em;
+  text-align: center;
+  margin: 5% auto 8em auto;
+  max-width: 12em;
+}
+
+.mainWrapper{
+  max-width: 95%;
+  height: 500px;
+  margin: 50px auto 0 auto;
+}
+
+.li{
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/*****************CSS Mobile for Button******************************/
+.button{
+  height: 2.3em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0 .5em 0 .5em;
+  border-radius: .35em;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: #EDEDED;
+  cursor: pointer;
+  font-size: 2em;
+  font-family: 'Hind', sans-serif;
+  text-align: center;
+  font-weight: 500;
+}
+
+.gradientcolor{
+  background: -webkit-linear-gradient(#D32353, #99163A);
+  background: -o-linear-gradient(#D32353, #99163A);
+  background: -moz-linear-gradient(#D32353, #99163A);
+  background: linear-gradient(#D32353, #99163A);
+}
+
+.gradientcolor:hover{
+  background: -webkit-linear-gradient(#D03761, #AF153F);
+  background: -o-linear-gradient(#D03761, #AF153F);
+  background: -moz-linear-gradient(#D03761, #AF153F);
+  background: linear-gradient(#D03761, #AF153F);
+}
+
+.gradientcolor:active{
+  background: -webkit-linear-gradient(#CC2251, #99163A );
+  background: -o-linear-gradient(#CC2251, #99163A );
+  background: -moz-linear-gradient(#CC2251, #99163A );
+  background: linear-gradient(#CC2251, #99163A );
+}
+
+/******************CSS Mobile Preface *********************/
+article#prefaceP{
+  font-size: 2em;
+  margin-top: 20%;
+  padding: 20px;
+  line-height: 1.25em;
+  border: solid .15em #D32353;
+  box-shadow: -.5em 0 #d32353;
+  border-radius: .35em;
+  background-color: #EEEEEE;
+  color: #222;
+}
+
+.buttonCenter{
+  text-align: center;
+}
+
+
+/*****************CSS Mobile for termsAndConditions.php***************/
+article.articleTAC{
+  max-height: 1000px;
+  overflow-y: scroll;
+  margin: 20% auto 0 auto;
+  background-color: #EEEEEE;
+  color: #222222;
+  padding: 20px 40px;
+  overflow-x: hidden;
+  border: solid .15em #D32353;
+  box-shadow: -.5em 0 #d32353;
+  border-radius: .35em;
+
+ height: 1000px;
+}
+
+.buttonStartEnquête{
+  float: right;
+}
+
+span.boldText{
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+li {
+  font-size: 2em  ;
+}
+
+/**************CSS Mobile for Best Restaurants.php******************/
+section#bestRestaurantsSection{
+  margin-top: 10%;
+  padding: 20px 1em .5em 1em;
+  border: solid .15em #D32353;
+  box-shadow: -.5em 0 #d32353;
+  border-radius: .6em;
+  background-color: #EEEEEE;
+  color: #111;
+}
+
+#choiceTitle{
+  margin-bottom: 20px;
+}
+
+select{
+  width: 100%;
+  height: 2.3em;
+  margin: .3em 0 1em 0;
+  padding: 0 .5em;
+  border: solid .15em #D32353;
+  border-radius: .3em;
+  box-shadow: 0 .2em .2em 0 #CCC;
+  color: #666;
+  font-size: 2em;
+  background-image: url(../img/dropdwn_chevron.svg);
+  background-origin: content-box;
+  background-size: .7em;
+  background-repeat: no-repeat;
+  background-position: right;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/*****************CSS Mobile for Restaurant Score***************/
+section#RestaurantScoreSection{
+  margin-top: 10%;
+  padding: 20px 1em .5em 1em;
+  border: solid .15em #D32353;
+  box-shadow: -.5em 0 #d32353;
+  border-radius: .35em;
+  background-color: #EEEEEE;
+  color: #111;
+  box-sizing: border-box;
+}
+
+#scoreTitle{
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*checkbox css*/
+label {
+  display: inline;
+  cursor: pointer;
+  color: #666;
+  font-size: 2em;
+}
+
+.regular-checkbox {
+  display: none;
+}
+
+.regular-checkbox + label {
+  background-color: #fafafa;
+  border:.08em solid #cacece;
+  padding: .7em;
+  border-radius: .2em;
+  display: inline-block;
+  position: relative;
+}
+
+.regular-checkbox:checked + label:after {
+  content: '\2714';
+  font-size: 2.2em;
+  position: absolute;
+  top: -0.25em;
+  color: #D32353;
+}
+
+.question{
+  display: inline;
+  margin-left: 2%;
+  color: #222;
+  font-size: 2.5em;
+}
+
+/*slider css*/
+.sliderContainer:not(:first-child){
+  padding-top: 1em;
+  border-top: 1px solid #d9d9d9;
+}
+
+.sliderText{
+  width: 32.5%;
+  display: inline-block;
+  margin: 0 0 2em 0;
+  color: #666;
+  font-size: 2em;
+}
+.neutraalT{
+  text-align: left;
+}
+
+.goedT{
+  text-align: center;
+}
+
+.uitstekendT{
+  text-align: right;
+}
+
+/*chrome etc*/
+input[type=range]{
+  display: flex;
+  width: 90%;
+  margin: 5em 5% 3em 5%;
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track{
+  height: 1em;
+  background: #D32353;
+  border: none;
+  border-radius: .35em;
+}
+
+input[type=range]:disabled::-webkit-slider-runnable-track{
+  background-color: grey;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 4.4em;
+  width: 3em;
+  border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+  margin-top: -1.2em;
+  background: -webkit-linear-gradient(#fbfbfb, #e5e5e5);
+  background: -o-linear-gradient(#fbfbfb, #e5e5e5);
+  background: -moz-linear-gradient(#fbfbfb, #e5e5e5);
+  background: linear-gradient(#fbfbfb, #e5e5e5);
+  box-shadow: 0 .5em .7em #777;
+  cursor: pointer;
+}
+
+input[type=range]:disabled::-webkit-slider-thumb{
+  cursor: auto;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+/*firefox*/
+input[type=range]::-moz-range-track {
+  height: 1em;
+  background: #D32353;
+  border: none;
+  border-radius: .35em;
+}
+
+input[type=range]:disabled::-moz-range-track {
+  background: grey;
+}
+
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 4.4em;
+  width: 3em;
+  border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+  margin-top: -1.2em;
+  background: -webkit-linear-gradient(#fbfbfb, #e5e5e5);
+  background: -o-linear-gradient(#fbfbfb, #e5e5e5);
+  background: -moz-linear-gradient(#fbfbfb, #e5e5e5);
+  background: linear-gradient(#fbfbfb, #e5e5e5);
+  box-shadow: 0 .5em .7em #777;
+  cursor: pointer;
+}
+
+input[type=range]:disabled::-moz-range-thumb {
+  cursor: auto;
+}
+
+input[type=range]:-moz-focusring{
+  outline: none;
+}
+
+/*internet explorer*/
+input[type=range]::-ms-track {
+  height: 1em;
+  background: transparent;
+  border-color: transparent;
+  border-width: 15px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #d32353;
+  border-radius: .35em;
+}
+input[type=range]::-ms-fill-upper {
+  background: #d32353;
+  border-radius: .35em;
+}
+
+input[type=range]:disabled::-ms-fill-lower{
+  background: grey;
+}
+
+input[type=range]:disabled::-ms-fill-upper{
+  background: grey;
+}
+
+input[type=range]::-ms-thumb {
+  border: none;
+  height: 4.4em;
+  width: 3em;
+  border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+  margin-top: -1.2em;
+  background: -webkit-linear-gradient(#fbfbfb, #e5e5e5);
+  background: -o-linear-gradient(#fbfbfb, #e5e5e5);
+  background: -moz-linear-gradient(#fbfbfb, #e5e5e5);
+  background: linear-gradient(#fbfbfb, #e5e5e5);
+  box-shadow: 0 .5em .7em #777;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+/*******************CSS Mobile for Endpage*****************************/
+#endTitle{
+  text-align: center;
+}
+
+article.articleEP{
+  font-size: 1.5em;
+  line-height: 1.25em;
+  max-width: 920px;
+  width: 100%;
+  max-height: 500px;
+  margin: 20% auto 0 auto;
+  background-color: #EEEEEE;
+  border-radius: 5px 7px 7px 5px;
+  border: solid .15em #D32353;
+  box-shadow: -.5em 0 #d32353;
+  border-radius: .45em;
+  padding: 30px 40px;
+  color: #222222;
+  box-sizing: border-box;
+}
+/************CSS Mobile for custom Scrollbar*************/
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d32353;
+  border: 0px none #ffffff;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d03761;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #cc2251;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+}
+
