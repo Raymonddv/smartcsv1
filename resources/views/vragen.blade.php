@@ -6,29 +6,30 @@
 @section('content')
 <div class="container">
     <h1>Vragen Restaurant</h1>
-<form action="">
-<select name="restaurant1">
-  @foreach ($places as $place)
-  <option value="{{$place->name}}">{{$place->name}}</option>
-  @endforeach
-</select>
 
-<select name="restaurant2">
-  @foreach ($places as $place)
-  <option value="{{$place->name}}">{{$place->name}}</option>
-  @endforeach
-</select>
+        Maak hier uw keuze uit uw 3 favoriete restaurants.
 
-<select name="restaurant3">
-  @foreach ($places as $place)
-  <option value="{{$place->name}}">{{$place->name}}</option>
-  @endforeach
-</select>
+  <form action= {{ action('VragenController@store') }} method="post">
+    <select name="place_1">
+      @foreach ($places as $place)
+      <option value="{{$place->name}}">{{$place->name}}</option>
+      @endforeach
+    </select>
 
-<button type="submit">Verzend</button>
+    <select name="place_2">
+      @foreach ($places as $place)
+      <option value="{{$place->name}}">{{$place->name}}</option>
+      @endforeach
+    </select>
 
-</form>
-
+    <select name="place_3">
+      @foreach ($places as $place)
+      <option value="{{$place->name}}">{{$place->name}}</option>
+      @endforeach
+    </select>
+    <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
+    <button type="submit">Verzend</button>
+  </form>
 </div>
 
 

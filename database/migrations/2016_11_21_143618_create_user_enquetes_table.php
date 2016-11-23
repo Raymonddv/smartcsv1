@@ -15,6 +15,7 @@ class CreateUserEnquetesTable extends Migration
     {
         Schema::create('user_enquetes', function (Blueprint $table) {
           $table->increments('id');
+          $table->integer('enquete_id');
           $table->string('place_1');
           $table->integer('place_1_kwaliteit_eten')->nullable();
           $table->integer('place_1_prijs_kwaliteit')->nullable();
