@@ -25,4 +25,9 @@ class PagesController extends Controller
         {
         return view('disclaimer');
         }
+
+        public function endpage()
+            {
+            return view('endpage');
+            }
   }
