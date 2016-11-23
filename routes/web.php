@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('endpage', 'PagesController@endpage');
 Route::get('about', 'PagesController@about');
 Route::get('vragen', 'VragenController@index');
 Route::get('inleiding', 'PagesController@inleiding');
