@@ -39,7 +39,7 @@ Route::patch('home', array('as' => 'home', 'uses' => function(){
 }));
 
 Route::get('/home', function () {
-    return view('home');
+     return view('home');
 });
 
 
