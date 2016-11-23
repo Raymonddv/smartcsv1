@@ -40,19 +40,3 @@ class UserEnquetesController extends Controller
            return redirect('userenquete2');
    }
 }
-
-
-         // $enquete = new UserEnquetes;
-          //$enquete->place_1_kwaliteit_eten = ('place_1_kwaliteit_eten');
-
-
-
-
-         // $user = new User;
-          //$user->username = Input::get('username');
-          //$user->email = Input::get('email');
-          //$user->password = Hash::make(Input::get('password'));
-          //$user->save();
-
-    //return Redirect::back();
-
