@@ -33,12 +33,8 @@ class VragenController extends Controller
       DB::table('user_enquetes')
         ->where('enquete_id', $id)
         ->update(['place_3' => $request->input('place_3')]);
-        var_dump($id);
-        //return redirect('userenquete');
 
-
-
-
+        return redirect('userenquete');
 
    }
 }
