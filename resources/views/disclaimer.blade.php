@@ -4,7 +4,6 @@
 @section('content')
 <div class="container">
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Id enim natura desiderat.</i> Duo Reges: constructio interrete. Eadem nunc mea adversum te oratio est. Non est enim vitium in oratione solum, sed etiam in moribus. Ut enim consuetudo loquitur, id solum dicitur honestum, quod est populari fama gloriosum. Quare ad ea primum, si videtur; <i>Ratio enim nostra consentit, pugnat oratio.</i> Nec vero alia sunt quaerenda contra Carneadeam illam sententiam. Quantum Aristoxeni ingenium consumptum videmus in musicis? Minime vero, inquit ille, consentit. </p>
 
   <div class="mainWrapper">
     <h1 class="subPageTitle">De Smaak van Leeuwarden</h1>

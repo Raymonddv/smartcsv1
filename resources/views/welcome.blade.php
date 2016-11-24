@@ -2,16 +2,27 @@
 
 
 @section('content')
-<div class="container">
-    <h1>The Welcome Page Goes Here</h1>
-    <a class="btn btn-info" href="auth/facebook" role="button">Login with Facebook</a>
-    <div class="row">
-  <div class="col-lg-6">
-  <br>
-        <input type="checkbox" aria-label="...">
-        <a href="disclaimer">klik hier voor de algemene voorwaarden</a>
-      </span>
+<h1 class="indexTitle">Welkom bij De smaak van Leeuwarden</h1>
 
-
+<div class="fb-login-wrapper">
+  <a href="inleiding">
+    <input type="button" disabled="disabled" class="fb-login-button" id="login" value="Aanmelden met Facebook">
+  </a>
 </div>
+
+<div class="termsAndConditionsWrapper">
+  <input type="checkbox" id="conditionsCheckbox">
+  <p>Ik ga akkoord met de
+  <a href="termsAndConditions.php" id="termsAndConditions">Algemene Voorwaarden.</a></p>
+</div>
+
+  <script type='text/javascript'>
+        document.getElementById('conditionsCheckbox').onclick=function(){
+            if(this.checked == false){
+                 document.getElementById('login').disabled = true;
+            } else {
+                document.getElementById('login').removeAttribute('disabled');
+            }
+        };
+</script>
 @stop
