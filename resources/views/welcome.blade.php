@@ -5,7 +5,7 @@
 <h1 class="indexTitle">Welkom bij De smaak van Leeuwarden</h1>
 
 <div class="fb-login-wrapper">
-  <a href="inleiding">
+  <a href="auth/facebook">
     <input type="button" disabled="disabled" class="fb-login-button" id="login" value="Aanmelden met Facebook">
   </a>
 </div>
