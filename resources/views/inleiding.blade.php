@@ -1,4 +1,4 @@
-@extends('layouts.app')
+<!-- @extends('layouts.app')
 
 @section('header')
 @stop
@@ -18,3 +18,4 @@
   </div>
 </div>
 @stop
+ -->
