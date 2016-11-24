@@ -45,7 +45,7 @@ public function redirectToProvider()
 
         Auth::login($authUser, true);
 
-        return redirect()->route('home');
+        return redirect()->view('home');
     }
 
     /**
