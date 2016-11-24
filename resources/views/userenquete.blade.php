@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-
-<div class="container">
+<div class="mainWrapper">
 <h1 class="subPageTitle">De Smaak van Leeuwarden</h1>
     <h3 id="scoreTitle">Selecteer de sterke punten en waardeer deze punten van
     <!-- Restaurant # --></h3>
+    <section id="RestaurantScoreSection">
   <form method="post" action="{{ action('UserEnquetesController@store') }}">
     <div class="sliderContainer">
         <input type="checkbox" id="checkbox-1" class="regular-checkbox" onclick="disable()">
@@ -14,7 +14,6 @@
         </label>
 
         <input type="range" name="place_1_kwaliteit_eten" max="10" min="0" step="1" value="" disabled="disabled">
-
         <p class="sliderText neutraalT">Neutraal</p>
         <p class="sliderText goedT">Goed</p>
         <p class="sliderText uitstekendT">Uitstekend</p>
@@ -78,7 +77,7 @@
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
   </form>
 </div>
-
+</section>
 <!-- js -->
 <script>
 function disable(){
