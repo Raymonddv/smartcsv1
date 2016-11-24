@@ -3,7 +3,7 @@
 @section('content')
 <div class="mainWrapper">
 <h1 class="subPageTitle">De Smaak van Leeuwarden</h1>
-    <h3 id="scoreTitle">Selecteer de sterke punten en waardeer deze punten van
+    <h3 id="scoreTitle">Selecteer de sterke punten en waardeer deze punten van uw eerste keuze.
     <!-- Restaurant # --></h3>
     <section id="RestaurantScoreSection">
   <form method="post" action="{{ action('UserEnquetesController@store') }}">
@@ -17,7 +17,6 @@
         <p class="sliderText neutraalT">Neutraal</p>
         <p class="sliderText goedT">Goed</p>
         <p class="sliderText uitstekendT">Uitstekend</p>
-    </div>
 
 
 <div class="sliderContainer">
@@ -71,13 +70,13 @@
         <p class="sliderText goedT">Goed</p>
         <p class="sliderText uitstekendT">Uitstekend</p>
       </div>
-
-
-    <input type="submit" value="Submit">
-    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+    </section>
+     <div class="buttonCenter">
+       <input type="submit" value="Submit" class="button gradientcolor">
+       <input type="hidden" name="_token" value="{{ csrf_token() }}">
+     </div>
   </form>
 </div>
-</section>
 <!-- js -->
 <script>
 function disable(){
@@ -118,38 +117,5 @@ function disable(){
   }
 </script>
 
-
-
-
-
-
-<!-- // if (document.getElementById('checkbox-2').checked == false) {
-          //   document.getElementById('slider-2').setAttribute("disabled", "disabled");
-          //   document.getElementById('slider-2').value = "6";
-          //   } else {
-          //     document.getElementById('slider-2').removeAttribute('disabled');
-          //   }
-
-
-          // if (document.getElementById('checkbox-3').checked == false) {
-          //   document.getElementById('slider-3').setAttribute("disabled", "disabled");
-          //   document.getElementById('slider-3').value = "6";
-          //   } else {
-          //     document.getElementById('slider-3').removeAttribute('disabled');
-          //   }
-
-          // if (document.getElementById('checkbox-4').checked == false) {
-          //   document.getElementById('slider-4').setAttribute("disabled", "disabled");
-          //   document.getElementById('slider-4').value = "6";
-          //   } else {
-          //     document.getElementById('slider-4').removeAttribute('disabled');
-          //   }
-
-          // if (document.getElementById('checkbox-5').checked == false) {
-          //   document.getElementById('slider-5').setAttribute("disabled", "disabled");
-          //   document.getElementById('slider-5').value = "6";
-          //   } else {
-          //     document.getElementById('slider-5').removeAttribute('disabled');
-          //   } -->
 
  @stop
