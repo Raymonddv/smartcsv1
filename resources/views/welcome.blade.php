@@ -13,7 +13,8 @@
 <div class="termsAndConditionsWrapper">
   <input type="checkbox" id="conditionsCheckbox">
   <p>Ik ga akkoord met de
-  <a href="termsAndConditions.php" id="termsAndConditions">Algemene Voorwaarden.</a></p>
+    <a href="termsAndConditions.php" id="termsAndConditions">Algemene Voorwaarden.</a>
+  </p>
 </div>
 
   <script type='text/javascript'>
