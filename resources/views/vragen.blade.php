@@ -8,7 +8,7 @@
 
   <form method="post" action= "{{action('VragenController@store')}}" >
     <section id="bestRestaurantsSection">
-      <select name="place_1" id="choice1">
+      <select required name="place_1" id="choice1">
         <option value="" hidden="hidden">Maak een keuze</option>
         @foreach ($places as $place)
         <option value="{{$place->name}}">{{$place->name}}</option>
@@ -17,7 +17,7 @@
 
 
 
-      <select name="place_2" id="choice2">
+      <select required name="place_2" id="choice2">
         <option value="" hidden="hidden">Maak een keuze</option>
         @foreach ($places as $place)
         <option value="{{$place->name}}">{{$place->name}}</option>
@@ -26,7 +26,7 @@
 
 
 
-      <select name="place_3" id="choice3">
+      <select required  name="place_3" id="choice3">
         <option value="" hidden="hidden">Maak een keuze</option>
         @foreach ($places as $place)
         <option value="{{$place->name}}">{{$place->name}}</option>
