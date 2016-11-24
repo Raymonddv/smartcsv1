@@ -71,47 +71,50 @@
         <p class="sliderText goedT">Goed</p>
         <p class="sliderText uitstekendT">Uitstekend</p>
       </div>
-    <input type="submit" value="Submit">
-    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+      </section>
+    <div class="buttonCenter">
+       <input type="submit" value="Submit" class="button gradientcolor">
+       <input type="hidden" name="_token" value="{{ csrf_token() }}">
+     </div>
   </form>
 </div>
-</section>
+
 
 <script>
 function disable(){
       if (document.getElementById('checkbox-1').checked == false) {
-        document.getElementsByName('place_1_kwaliteit_eten')[0].setAttribute("disabled", "disabled");
-        document.getElementsByName('place_1_kwaliteit_eten')[0].value = "5";
+        document.getElementsByName('place_3_kwaliteit_eten')[0].setAttribute("disabled", "disabled");
+        document.getElementsByName('place_3_kwaliteit_eten')[0].value = "5";
         } else {
-          document.getElementsByName('place_1_kwaliteit_eten')[0].removeAttribute('disabled');
+          document.getElementsByName('place_3_kwaliteit_eten')[0].removeAttribute('disabled');
         }
 
               if (document.getElementById('checkbox-2').checked == false) {
-        document.getElementsByName('place_1_prijs_kwaliteit')[0].setAttribute("disabled", "disabled");
-        document.getElementsByName('place_1_prijs_kwaliteit')[0].value = "5";
+        document.getElementsByName('place_3_prijs_kwaliteit')[0].setAttribute("disabled", "disabled");
+        document.getElementsByName('place_3_prijs_kwaliteit')[0].value = "5";
         } else {
-          document.getElementsByName('place_1_prijs_kwaliteit')[0].removeAttribute('disabled');
+          document.getElementsByName('place_3_prijs_kwaliteit')[0].removeAttribute('disabled');
         }
 
               if (document.getElementById('checkbox-3').checked == false) {
-        document.getElementsByName('place_1_variatie')[0].setAttribute("disabled", "disabled");
-        document.getElementsByName('place_1_variatie')[0].value = "5";
+        document.getElementsByName('place_3_variatie')[0].setAttribute("disabled", "disabled");
+        document.getElementsByName('place_3_variatie')[0].value = "5";
         } else {
-          document.getElementsByName('place_1_variatie')[0].removeAttribute('disabled');
+          document.getElementsByName('place_3_variatie')[0].removeAttribute('disabled');
         }
 
               if (document.getElementById('checkbox-4').checked == false) {
-        document.getElementsByName('place_1_sfeer')[0].setAttribute("disabled", "disabled");
-        document.getElementsByName('place_1_sfeer')[0].value = "5";
+        document.getElementsByName('place_3_sfeer')[0].setAttribute("disabled", "disabled");
+        document.getElementsByName('place_3_sfeer')[0].value = "5";
         } else {
-          document.getElementsByName('place_1_sfeer')[0].removeAttribute('disabled');
+          document.getElementsByName('place_3_sfeer')[0].removeAttribute('disabled');
         }
 
               if (document.getElementById('checkbox-5').checked == false) {
-        document.getElementsByName('place_1_service')[0].setAttribute("disabled", "disabled");
-        document.getElementsByName('place_1_service')[0].value = "5";
+        document.getElementsByName('place_3_service')[0].setAttribute("disabled", "disabled");
+        document.getElementsByName('place_3_service')[0].value = "5";
         } else {
-          document.getElementsByName('place_1_service')[0].removeAttribute('disabled');
+          document.getElementsByName('place_3_service')[0].removeAttribute('disabled');
         }
   }
 </script>
