@@ -72,12 +72,14 @@
         <p class="sliderText goedT">Goed</p>
         <p class="sliderText uitstekendT">Uitstekend</p>
       </div>
-
-    <input type="submit" value="Submit">
-    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+</section>
+    <div class="buttonCenter">
+       <input type="submit" value="Submit" class="button gradientcolor">
+       <input type="hidden" name="_token" value="{{ csrf_token() }}">
+     </div>
   </form>
 </div>
-</section>
+
 <script>
 function disable(){
       if (document.getElementById('checkbox-1').checked == false) {
