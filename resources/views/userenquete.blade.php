@@ -17,7 +17,6 @@
         <p class="sliderText neutraalT">Neutraal</p>
         <p class="sliderText goedT">Goed</p>
         <p class="sliderText uitstekendT">Uitstekend</p>
-    </div>
 
 
 <div class="sliderContainer">
@@ -71,13 +70,8 @@
         <p class="sliderText goedT">Goed</p>
         <p class="sliderText uitstekendT">Uitstekend</p>
       </div>
-
-
-    <input type="submit" value="Submit">
-    <input type="hidden" name="_token" value="{{ csrf_token() }}">
   </form>
 </div>
-</section>
 <!-- js -->
 <script>
 function disable(){
