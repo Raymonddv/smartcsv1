@@ -11,7 +11,7 @@ class UserEnquetesController extends Controller
 {
     public function index()
     {
-        return view('UserEnquete');
+        return view('userenquete');
     }
 
     public function store(Request $request)

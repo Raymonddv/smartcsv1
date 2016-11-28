@@ -4,7 +4,7 @@
 
 <div class="mainWrapper">
   <h1 class="subPageTitle">De Smaak van Leeuwarden</h1>
-  <h3 id="choiceTitle">Maak hieronder een keuze van de 3 beste locale restaurants:</h3>
+  <h3 id="choiceTitle">Maak hieronder een keuze van de 3 beste lokale restaurants:</h3>
 
   <form method="post" action= "{{action('VragenController@store')}}" >
     <section id="bestRestaurantsSection">
