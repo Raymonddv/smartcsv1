@@ -2,7 +2,7 @@
 
 
 @section('content')
-<h1 class="indexTitle">Welkom bij De smaak van Leeuwarden</h1>
+<h1 class="indexTitle">Welkom bij De Smaak van Leeuwarden</h1>
 
 <div class="fb-login-wrapper">
   <a href="auth/facebook">

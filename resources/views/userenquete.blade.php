@@ -72,7 +72,7 @@
       </div>
     </section>
      <div class="buttonCenter">
-       <input type="submit" value="Submit" class="button gradientcolor">
+       <input type="submit" value="Volgende vraag" class="button gradientcolor">
        <input type="hidden" name="_token" value="{{ csrf_token() }}">
      </div>
   </form>

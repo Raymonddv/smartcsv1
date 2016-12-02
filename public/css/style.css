@@ -549,8 +549,7 @@ h1{
 }
 
 h3 {
-  font-size: 2em;
-  padding-top: .5em;
+  font-size: 1.2em;
 }
 
 h5{
@@ -561,15 +560,15 @@ h5{
 }
 
 h6{
-  font-size: 2em;
+  font-size: 1.2em;
 }
 
 /******************CSS Mobile for Index**************************/
 
 .indexTitle{
-  font-size: 2em;
+  font-size: 1.8em;
   text-align: center;
-  margin: 3em auto 5.5em auto;
+  margin: 1.75em auto 2em auto;
   max-width: 12em;
 }
 
@@ -581,9 +580,9 @@ h6{
 }
 
 input.fb-login-button{
-  width: 10em;
-  height: 2.19em;
-  padding: .5em .6em .3em .5em;
+  width: 15.5em;
+  height: 2.80em;
+  padding: .55em .75em .3em .5em;
   text-decoration: none;
   border: none;
   outline: none;
@@ -594,7 +593,7 @@ input.fb-login-button{
   text-align: right;
   background-color: #3b5998;
   background-image: url(../img/facebook_icon.svg);
-  background-size: 2.19em;
+  background-size: 2.80em;
   background-repeat: no-repeat;
   border-radius: .35em;
 }
@@ -603,54 +602,63 @@ input.fb-login-button:disabled{
   background-color: #707070;
   cursor: not-allowed;
   background-image: url(../img/facebook_icon_dis.svg);
-  background-size: 2.19em;
+  background-size: 2.80em;
   background-repeat: no-repeat;
 }
 
 .termsAndConditionsWrapper{
-  max-width: 100%;
-  margin: 5.5em 11em;
+  max-width: 345px;
+  margin: 5.5em auto;
 }
 
 .termsAndConditionsWrapper input{
   float: left;
-  margin-right: 10px
+  margin-left: 0;
 }
 
 .termsAndConditionsWrapper p{
-  font-size: 1.8em;
-  max-width: 780px;
+  font-size: 1em;
+  max-width: 100%;
   float: left;
-  margin-top: .3em;
+  margin-top: .2em;
 }
 
 .termsAndConditionsWrapper #termsAndConditions{
   text-decoration: underline;
 }
 
-input[type=checkbox] {
-  -ms-transform: scale(2); /* IE */
-  -moz-transform: scale(2); /* FF */
-  -webkit-transform: scale(2); /* Safari and Chrome */
-  -o-transform: scale(2); /* Opera */
-  padding: 10px;
-  margin-top: 1.3em;
-  margin-right: 2.5em;
+.regular-checkbox {
+  display: none;
 }
 
+.regular-checkbox + label {
+  background-color: #fafafa;
+  border:.08em solid #cacece;
+  padding: .45em;
+  border-radius: .2em;
+  display: inline-block;
+  position: relative;
+}
+
+.regular-checkbox:checked + label:after {
+  content: '\2714';
+  font-size: 1.2em;
+  position: absolute;
+  top: -0.25em;
+  color: #D32353;
+}
 
 /********************CSS Mobile for all subpages***********************/
 h1.subPageTitle{
-  font-size: 4em;
+  font-size: 1.8em;
   text-align: center;
-  margin: 5% auto 8em auto;
-  max-width: 12em;
+  margin: .5em auto 2em auto;
 }
 
 .mainWrapper{
   max-width: 95%;
   height: 500px;
-  margin: 50px auto 0 auto;
+  margin: 50px auto 0 3.8%;
 }
 
 .li{
@@ -660,7 +668,7 @@ h1.subPageTitle{
 
 /*****************CSS Mobile for Button******************************/
 .button{
-  height: 2.3em;
+  height: 2em;
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 0 .5em 0 .5em;
@@ -670,7 +678,7 @@ h1.subPageTitle{
   outline: none;
   color: #EDEDED;
   cursor: pointer;
-  font-size: 2em;
+  font-size: 1.2em;
   font-family: 'Hind', sans-serif;
   text-align: center;
   font-weight: 500;
@@ -699,11 +707,11 @@ h1.subPageTitle{
 
 /******************CSS Mobile Preface *********************/
 article#prefaceP{
-  font-size: 2em;
+  font-size: 1.2em;
   margin-top: 20%;
   padding: 20px;
   line-height: 1.25em;
-  border: solid .15em #D32353;
+  border: solid .1em #D32353;
   box-shadow: -.5em 0 #d32353;
   border-radius: .35em;
   background-color: #EEEEEE;
@@ -717,12 +725,12 @@ article#prefaceP{
 
 /*****************CSS Mobile for termsAndConditions.php***************/
 article.articleTAC{
-  max-height: 1000px;
+  max-height: 65%;
   overflow-y: scroll;
   margin: 20% auto 0 auto;
   background-color: #EEEEEE;
   color: #222222;
-  padding: 20px 40px;
+  padding: 20px;
   overflow-x: hidden;
   border: solid .15em #D32353;
   box-shadow: -.5em 0 #d32353;
@@ -744,13 +752,13 @@ p {
 }
 
 li {
-  font-size: 2em  ;
+  font-size: 1em  ;
 }
 
 /**************CSS Mobile for Best Restaurants.php******************/
 section#bestRestaurantsSection{
   margin-top: 10%;
-  padding: 20px 1em .5em 1em;
+  padding: 20px 1em 20px 1em;
   border: solid .15em #D32353;
   box-shadow: -.5em 0 #d32353;
   border-radius: .6em;
@@ -765,13 +773,13 @@ section#bestRestaurantsSection{
 select{
   width: 100%;
   height: 2.3em;
-  margin: .3em 0 1em 0;
+  margin: 0 0 1em 0;
   padding: 0 .5em;
   border: solid .15em #D32353;
   border-radius: .3em;
   box-shadow: 0 .2em .2em 0 #CCC;
   color: #666;
-  font-size: 2em;
+  font-size: 1.2em;
   background-image: url(../img/dropdwn_chevron.svg);
   background-origin: content-box;
   background-size: .7em;
@@ -805,7 +813,7 @@ label {
   display: inline;
   cursor: pointer;
   color: #666;
-  font-size: 2em;
+  font-size: 1.2em;
 }
 
 .regular-checkbox {
@@ -815,7 +823,7 @@ label {
 .regular-checkbox + label {
   background-color: #fafafa;
   border:.08em solid #cacece;
-  padding: .7em;
+  padding: .45em;
   border-radius: .2em;
   display: inline-block;
   position: relative;
@@ -823,7 +831,7 @@ label {
 
 .regular-checkbox:checked + label:after {
   content: '\2714';
-  font-size: 2.2em;
+  font-size: 1.2em;
   position: absolute;
   top: -0.25em;
   color: #D32353;
@@ -833,7 +841,7 @@ label {
   display: inline;
   margin-left: 2%;
   color: #222;
-  font-size: 2.5em;
+  font-size: 1.2em;
 }
 
 /*slider css*/
@@ -843,14 +851,15 @@ label {
 }
 
 .sliderText{
-  width: 32.5%;
+  width: 32%;
   display: inline-block;
-  margin: 0 0 2em 0;
+  margin: 0 0 1em 0;
   color: #666;
-  font-size: 2em;
+  font-size: 1em;
 }
 .neutraalT{
   text-align: left;
+  margin-left: .1em;
 }
 
 .goedT{
@@ -865,12 +874,12 @@ label {
 input[type=range]{
   display: flex;
   width: 90%;
-  margin: 5em 5% 3em 5%;
+  margin: 1.5em 5% 1em 5%;
   -webkit-appearance: none;
 }
 
 input[type=range]::-webkit-slider-runnable-track{
-  height: 1em;
+  height: .35em;
   background: #D32353;
   border: none;
   border-radius: .35em;
@@ -883,15 +892,15 @@ input[type=range]:disabled::-webkit-slider-runnable-track{
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: none;
-  height: 4.4em;
-  width: 3em;
+  height: 1.8em;
+  width: 1em;
   border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
-  margin-top: -1.2em;
+  margin-top: -.9em;
   background: -webkit-linear-gradient(#fbfbfb, #e5e5e5);
   background: -o-linear-gradient(#fbfbfb, #e5e5e5);
   background: -moz-linear-gradient(#fbfbfb, #e5e5e5);
   background: linear-gradient(#fbfbfb, #e5e5e5);
-  box-shadow: 0 .5em .7em #777;
+  box-shadow: 0 .2em .3em #777;
   cursor: pointer;
 }
 
@@ -985,18 +994,15 @@ input[type=range]:focus {
 }
 
 article.articleEP{
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 1.25em;
-  max-width: 920px;
-  width: 100%;
-  max-height: 500px;
   margin: 20% auto 0 auto;
   background-color: #EEEEEE;
   border-radius: 5px 7px 7px 5px;
-  border: solid .15em #D32353;
+  border: solid .1em #D32353;
   box-shadow: -.5em 0 #d32353;
   border-radius: .45em;
-  padding: 30px 40px;
+  padding: 20px;
   color: #222222;
   box-sizing: border-box;
 }

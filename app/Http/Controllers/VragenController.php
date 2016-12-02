@@ -12,7 +12,7 @@ class VragenController extends Controller
 {
     public function index()
     {
-      $places = places::all();
+      $places = places::orderBy('name', 'asc')->get();
       return view('vragen', compact('places'));
     }
     public function store(Request $request)
