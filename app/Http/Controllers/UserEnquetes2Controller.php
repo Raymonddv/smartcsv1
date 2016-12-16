@@ -10,7 +10,11 @@ class UserEnquetes2Controller extends Controller
 {
     public function index()
     {
-        return view('userenquete2');
+      $id = Auth::id();
+
+      $places = DB::table('user_enquetes')->where('enquete_id', $id)->get();
+
+      return view('userenquete2', compact('places'));
     }
 
     public function store(Request $request)
@@ -40,4 +44,3 @@ class UserEnquetes2Controller extends Controller
            return redirect('userenquete3');
    }
 }
-

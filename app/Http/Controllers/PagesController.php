@@ -17,17 +17,22 @@ class PagesController extends Controller
     }
 
     public function inleiding()
-      {
-        return view('inleiding');
-        }
+    {
+    return view('inleiding');
+    }
 
     public function disclaimer()
-        {
-        return view('disclaimer');
-        }
+    {
+    return view('disclaimer');
+    }
 
-        public function endpage()
-            {
-            return view('endpage');
-            }
-  }
+    public function privacy()
+    {
+    return view('privacystatement');
+    }
+
+    public function endpage()
+    {
+    return view('endpage');
+    }
+}

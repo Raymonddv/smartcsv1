@@ -11,7 +11,11 @@ class UserEnquetesController extends Controller
 {
     public function index()
     {
-        return view('userenquete');
+      $id = Auth::id();
+
+      $places = DB::table('user_enquetes')->where('enquete_id', $id)->get();
+
+      return view('userenquete', compact('places'));
     }
 
     public function store(Request $request)
