@@ -1,4 +1,4 @@
-<!-- @extends('layouts.app')
+@extends('layouts.app')
 
 @section('header')
 @stop
@@ -15,11 +15,11 @@ Nadat je op de knop "Start Enquête" hebt gedrukt, volgen er een aantal vragen. 
 Succes!
   </article>
   <div class="buttonCenter">
-    <a href="vragen">
+    <a href="welcome">
       <input type="button" id="startE" class="button gradientcolor" title="button"
       value="Start Enquête">
     </a>
   </div>
 </div>
 @stop
- -->
+

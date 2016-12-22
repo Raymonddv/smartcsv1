@@ -12,13 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('inleiding');
 });
 
 Route::get('endpage', 'PagesController@endpage');
 Route::get('about', 'PagesController@about');
 Route::get('vragen', 'VragenController@index');
-Route::get('inleiding', 'PagesController@inleiding');
+Route::get('welcome', 'WelcomeController@index');
 Route::get('disclaimer', 'PagesController@disclaimer');
 Route::get('privacystatement', 'PagesController@privacy');
 Route::post('vragen', 'VragenController@store');
