@@ -2,6 +2,8 @@
 
 
 @section('content')
+<div class="container">
+
 
   <div class="mainWrapper">
     <h1 class="subPageTitle">De Smaak van Leeuwarden</h1>
@@ -27,14 +29,13 @@
         <br><br>
 
         Aansprakelijkheid. De NHL is niet aansprakelijk op welke rechtsgrond dan ook voor schade, in welke vorm dan ook, direct of indirect, die op enige wijze ontstaat door of voortvloeit uit:
-	<br>
           <ul>
             <li>het gebruik, de wijziging of de niet beschikbaarheid van de website en de   daarop of daardoor verstrekte informatie;
             </li>
             <li>het gebruik, de wijziging of de niet beschikbaarheid van de hyperlinks naar websites van derden en de daarop of daardoor verstrekte informatie.
             </li>
           </ul>
-        <br>
+        <br><br>
 
         Intellectuele eigendom. De auteursrechten op de website en de daarop opgenomen informatie berusten bij de NHL, tenzij uitdrukkelijk anders is aangegeven. Het is toegestaan de informatie voor persoonlijk gebruik te downloaden of te printen. Het is uitdrukkelijk niet toegestaan de informatie voor andere doeleinden te gebruiken en in het bijzonder niet voor commerciële exploitatie.
         <br><br>
@@ -61,17 +62,14 @@
         <br><br>
 
         <span class="boldText">General conditions.</span> The NHL general terms and conditions apply to its services. To the programmes offered by the NHL the enrolment conditions apply. To the courses offered by the NHL the general terms and conditions for courses apply. To the knowledge services provided by the NHL the general terms and conditions of the knowledge services apply. To purchasing the NHL applies the General Conditions for Government Purchasing. Please click here for the general terms and conditions of the NHL.
-        <br><br>
-
-	<span class="boldText">Liability.</span> The NHL does not accept any liability for any damage whatsoever that is directly or indirectly the result of:<br>
-
-	  <ul>
+        <span class="boldText">Liability.</span> The NHL does not accept any liability for any damage whatsoever that is directly or indirectly the result of:
+          <ul>
             <li>the use of, change to, or non-availability of the website and the information provided on or via the website;
             </li>
             <li>the use of, change to, or non-availability of the hyperlinks to third-party websites and the information provided on or via such websites.
             </li>
           </ul>
-        <br>
+        <br><br>
 
           <span class="boldText">Intellectual property.</span> The NHL owns the copyright to the website and the information contained thereon, unless expressly specified otherwise. It is permitted to use, download or print this information for personal use. It is expressly forbidden to use this information for any other purpose, particularly for commercial use.
         <br><br>
@@ -113,10 +111,8 @@
 
         <span class="boldText">Disclaimer.</span> Naast deze Privacy Statement is een Disclaimer van toepassing op de websites. Bekijk <a href="https://www.nhl.nl/disclaimer">hier</a> de disclaimer.
     </article>
-
-    <div class="buttonCenter">
-      <a href="#" onclick="history.go(-1);">
-        <input type="button" class="button gradientcolor" title="button" value="Terug">
-      </a>
-    </div>
+    <a href="#" onclick="history.go(-1);">
+      <input type="button" class="button gradientcolor" title="button" value="Terug">
+    </a>
+</div>
 @stop
